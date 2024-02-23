@@ -1,0 +1,180 @@
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Style the video element */
+  .video-background {
+    position: fixed; /* Make the video stay in place */
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Make the video fill the whole screen */
+    height: 100%;
+    z-index: -1; /* Put the video behind the content */
+    object-fit: cover; /* Scale the video to cover the container */
+  }
+  
+  .to {
+    position: relative; /* Make the to-do list container stay on top of the video */
+    z-index: 1;
+    display: flex; /* Make the container a flex container */
+    flex-direction: column; /* Arrange the items vertically */
+    justify-content: center; /* Center the items along the main axis */
+    align-items: center; /* Center the items along the cross axis */
+    background: scroll;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+  }
+  
+  .top {
+    display: flex; /* Make the top section a flex container */
+    flex-direction: column; /* Arrange the items vertically */
+    justify-content: center; /* Center the items along the main axis */
+    align-items: center; /* Center the items along the cross axis */
+  }
+  
+  .input {
+    margin-left: 5%;
+    margin-right: 3%;
+  }
+  
+  h1 {
+    font-size: 5rem; /* Use rem unit for font size */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #efe6e6;
+  }
+  
+  .top-button {
+    font-size: 1.5rem; /* Use rem unit for font size */
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(39, 203, 44);
+    color: #efe6e6;
+    padding: 7px;
+    border: none;
+    margin-left: 7px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 9px #999;
+  }
+  
+  .top-button:hover {
+    background-color: #3e8e41;
+    transition: 1.7s;
+  }
+  
+  .top-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  input[type="text"] {
+    color: #1e1d1d;
+    background-color: bisque;
+    border-radius: 7px;
+    font-size: 1.5rem; /* Use rem unit for font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .tasks {
+    display: flex; /* Make the tasks section a flex container */
+    flex-direction: column; /* Arrange the items vertically */
+    justify-content: center; /* Center the items along the main axis */
+    align-items: center; /* Center the items along the cross axis */
+  }
+  
+  .tasks-li {
+    font-size: 2rem; /* Use rem unit for font size */
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    color: #efe6e6;
+    list-style-type: georgian;
+  }
+  
+  .tb1 {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #d80d0d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-right: 8%;
+    border-radius: 5px;
+    border: none;
+    margin: 7px 6px;
+    padding: 7px;
+  }
+  
+  .tb1:hover {
+    background-color: #c20909;
+    transition: 1.7s;
+  }
+  
+  .tb1:active {
+    background-color: #e11717;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  .tb2 {
+    font-size: 0.7rem; /* Use rem unit for font size */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    background-color: rgba(10, 219, 238, 0.936);
+    border-radius: 5px;
+    border: none;
+    margin: 7px 6px;
+    padding: 5px;
+    color: #efe6e6;
+  }
+  
+  .tb2:hover {
+    cursor: pointer;
+  }
+  
+  /* Add media queries for different screen sizes */
+  
+  @media screen and (max-width: 600px) {
+    /* Apply styles for small screens */
+    h1 {
+      font-size: 3rem; /* Reduce the font size of the heading */
+    }
+  
+    .top-button {
+      font-size: 1rem; /* Reduce the font size of the button */
+    }
+  
+    .tasks-li {
+      font-size: 1.5rem; /* Reduce the font size of the tasks */
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Apply styles for medium screens */
+    h1 {
+      font-size: 4rem; /* Adjust the font size of the heading */
+    }
+  
+    .top-button {
+      font-size: 1.2rem; /* Adjust the font size of the button */
+    }
+  
+    .tasks-li {
+      font-size: 1.8rem; /* Adjust the font size of the tasks */
+    }
+  }
+  
